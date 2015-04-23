@@ -28,7 +28,7 @@ class Sample_Test_Control extends controls\Base_Control {
 		$this->register_css();
 
 		$data = array(
-			'output_text' => $this->prepare_data(),    // 항상 key-value 쌍이어야 하며 key는 변수 이름으로 쓸 수 있어야 합니다.
+			'output_text' => $this->prepare_data(),    // 항상 key-value 쌍이어야 하며 key 는 변수 이름으로 쓸 수 있어야 합니다.
 		);
 
 		$this->loader->simple_view( 'sample-test', $data );

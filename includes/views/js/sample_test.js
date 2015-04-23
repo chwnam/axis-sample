@@ -5,7 +5,7 @@ function onButton1Click() {
                 "action": "axis_sample_test_action",
                 "param": "foo"
             },
-            "success": function(data, textStatus, jqXHR) {
+            "success": function (data) {
                 jQuery('div#div1').append("<br>ajax callback success! " + data + ".</br>");
             }
         }

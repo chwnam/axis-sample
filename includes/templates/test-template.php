@@ -12,14 +12,14 @@ $view->extend( '/common/common-template' );
 $view->assign( 'title', $post->title );
 $view->begin_block( 'sidebar' );
 ?>
-    <li>
-        this is sidebar!
-    </li>
-    <li>
-        do you like template?
-    </li>
-	<button id="ajax-return">AJAX Return Test</button>
-	<div id="output"></div>
+<li>
+	this is sidebar!
+</li>
+<li>
+	do you like template?
+</li>
+<button id="ajax-return">AJAX Return Test</button>
+<div id="output"></div>
 <?php $view->end_block(); ?>
 
 <?= $post->body ?><br>

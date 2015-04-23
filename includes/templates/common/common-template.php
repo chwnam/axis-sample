@@ -3,8 +3,8 @@
 <?= $view->fetch( 'content' ) ?>
 
 <div class="actions">
-    <h3>Related actions</h3>
-    <ul>
-        <?= $view->fetch( 'sidebar' ) ?>
-    </ul>
+	<h3>Related actions</h3>
+	<ul>
+		<?= $view->fetch( 'sidebar' ) ?>
+	</ul>
 </div>

@@ -7,26 +7,26 @@ use axis_framework\includes\controls;
 
 class View_Class_Test_Control extends controls\Base_Control {
 
-    public function __construct( $args ) {
+	public function __construct( $args ) {
 
-        parent::__construct( $args );
-    }
+		parent::__construct( $args );
+	}
 
-    public function run() {
+	public function run() {
 
-        $post = new \stdClass();
-        $post->title = 'post title';
-        $post->body  = 'post body!';
+		$post        = new \stdClass();
+		$post->title = 'post title';
+		$post->body  = 'post body!';
 
-        $context = array(
-            'val'      => 1,
-            'arr'      => array( 1, 2, 3, 4, 5 ),
-            'post'     => $post,
-        );
+		$context = array(
+			'val'  => 1,
+			'arr'  => array( 1, 2, 3, 4, 5 ),
+			'post' => $post,
+		);
 
-	    $this->prepare_script();
-	    $this->view_helper( 'axis_sample', 'view-class-test', array(), $context );
-    }
+		$this->prepare_script();
+		$this->view_helper( 'axis_sample', 'view-class-test', array(), $context );
+	}
 
 	public function prepare_script() {
 

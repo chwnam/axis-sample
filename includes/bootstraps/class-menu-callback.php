@@ -24,7 +24,7 @@ class Menu_Callback extends bootstraps\Base_Menu_Callback {
 			AXIS_SAMPLE_SHORT_NAME,           // menu title
 			$capability,
 			$menu_slug
-		    // callback, icon_url, position
+		// callback, icon_url, position
 		);
 		$menu_item->add();
 
@@ -40,16 +40,15 @@ class Menu_Callback extends bootstraps\Base_Menu_Callback {
 				'axis_sample_menu_sample_test',                          // menu slug
 				array( $this, 'axis_sample_menu_sample_test' )           // callback
 			),
-
-            new bootstraps\Submenu_Page_Item(
-                TRUE,
-                $menu_slug,
-                'View Class Test - ' . AXIS_SAMPLE_FULL_NAME,
-                'View Class Test',
-                $capability,
-                'axis_sample_menu_view_class_test',
-                $this->control_helper( 'axis_sample', 'view-class-test' ) // using helper function
-            ),
+			new bootstraps\Submenu_Page_Item(
+				TRUE,
+				$menu_slug,
+				'View Class Test - ' . AXIS_SAMPLE_FULL_NAME,
+				'View Class Test',
+				$capability,
+				'axis_sample_menu_view_class_test',
+				$this->control_helper( 'axis_sample', 'view-class-test' ) // using helper function
+			),
 		);
 
 		foreach ( $submenu_page_wish_list as &$item ) {
