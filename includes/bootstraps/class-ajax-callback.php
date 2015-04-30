@@ -8,9 +8,9 @@ use axis_framework\includes\bootstraps;
 
 class Ajax_Callback extends bootstraps\Base_Ajax_Callback {
 
-	public function __construct() {
+	protected function __construct( array $args = array() ) {
 
-		parent::__construct();
+		parent::__construct( $args );
 	}
 
 	public function add_ajax_actions() {

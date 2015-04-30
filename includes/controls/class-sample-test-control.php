@@ -16,7 +16,7 @@ class Sample_Test_Control extends controls\Base_Control {
 	private function prepare_data() {
 
 		/** @var Sample_Test_Model $model */
-		$model = $this->loader->model( 'axis_sample', 'sample-test' );
+		$model = $this->loader->model( 'axis_sample', 'sample-test', array( 'control' => $this ) );
 		$data  = $model->prepare_data();
 
 		return $data;

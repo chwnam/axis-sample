@@ -1,8 +1,6 @@
 <?php
 namespace axis_sample; // The namespace should be equal to all callback classes!
 
-require_once( AXIS_INC_BOOTSTRAP_PATH . '/class-base-settings-callback.php' );
-
 use \axis_framework\includes\bootstraps\Base_Settings_Callback;
 use \axis_framework\includes\bootstraps\settings;
 

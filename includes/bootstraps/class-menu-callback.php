@@ -8,9 +8,9 @@ use axis_framework\includes\bootstraps;
 
 class Menu_Callback extends bootstraps\Base_Menu_Callback {
 
-	public function __construct() {
+	protected function __construct( array $args = array() ) {
 
-		parent::__construct();
+		parent::__construct( $args );
 	}
 
 	public function add_admin_menu() {
@@ -63,7 +63,7 @@ class Menu_Callback extends bootstraps\Base_Menu_Callback {
 
 	public function axis_sample_menu_sample_test() {
 
-		$control = $this->loader->control( 'axis_sample', 'sample-test' );
+		$control = $this->loader->control( 'axis_sample\major\minor', 'major/minor/sample-test' );
 		$control->run();
 	}
 }
