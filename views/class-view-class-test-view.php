@@ -2,7 +2,7 @@
 
 namespace axis_sample;
 
-use axis_framework\includes\views;
+use axis_framework\views;
 
 
 class View_Class_Test_View extends views\Base_View {

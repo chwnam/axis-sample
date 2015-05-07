@@ -1,8 +1,8 @@
 <?php
 namespace axis_sample; // The namespace should be equal to all callback classes!
 
-use \axis_framework\includes\bootstraps\Base_Settings_Callback;
-use \axis_framework\includes\bootstraps\settings;
+use \axis_framework\bootstraps\Base_Settings_Callback;
+use \axis_framework\bootstraps\settings;
 
 
 class Settings_Callback extends Base_Settings_Callback {

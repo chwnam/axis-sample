@@ -2,7 +2,7 @@
 
 namespace axis_sample;
 
-use axis_framework\includes\models;
+use axis_framework\models;
 
 
 class Sample_Test_Model extends models\Base_Model {

@@ -1,9 +1,7 @@
 <?php
 namespace axis_sample; // The namespace should be equal to all callback classes!
 
-require_once( AXIS_INC_BOOTSTRAP_PATH . '/class-base-ajax-callback.php' );
-
-use axis_framework\includes\bootstraps;
+use axis_framework\bootstraps;
 
 
 class Ajax_Callback extends bootstraps\Base_Ajax_Callback {

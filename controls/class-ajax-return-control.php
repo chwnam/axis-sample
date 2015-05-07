@@ -2,7 +2,7 @@
 
 namespace axis_sample;
 
-use axis_framework\includes\controls\Base_Control;
+use axis_framework\controls\Base_Control;
 
 
 class Ajax_Return_Control extends Base_Control {

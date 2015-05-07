@@ -2,8 +2,8 @@
 
 namespace axis_sample\major\minor;
 
-use axis_framework\includes\controls;
-use axis_framework\includes\core;
+use axis_framework\controls;
+use axis_framework\core;
 
 
 class Sample_Test_Control extends controls\Base_Control {

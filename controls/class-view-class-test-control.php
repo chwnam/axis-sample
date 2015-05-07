@@ -2,7 +2,7 @@
 
 namespace axis_sample;
 
-use axis_framework\includes\controls;
+use axis_framework\controls;
 
 
 class View_Class_Test_Control extends controls\Base_Control {
